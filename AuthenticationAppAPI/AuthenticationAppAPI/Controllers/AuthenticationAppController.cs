@@ -14,8 +14,8 @@ namespace AuthenticationAppAPI.Controllers
     public class AuthenticationAppController : ApiController
     {
         string CS = ConfigurationManager.ConnectionStrings["DC"].ConnectionString;
-        
-        // GET api/values
+
+        // GET api/auth
         [HttpGet]
         [Route("api/auth")]
         public IHttpActionResult Get()
